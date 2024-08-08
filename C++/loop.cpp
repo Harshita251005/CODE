@@ -813,46 +813,48 @@
 
 
 
-#include<iostream>
-using namespace std;
-int main()
-{
-    int row,col,i,j;
-    cin>>row;
-    for(j=1;j<=row;j++)
-    {
-    for(i=1;i<=j;i++)
-    {
-        cout<<"*";
-    }
-    for(i=1;i<=2*row-2*j;i++)
-    {
-        cout<<" ";
-    }
-    for(i=1;i<=j;i++)
-    {
-        cout<<"*";
-    }
-    cout<<endl;
-    }
-    for(j=row-1;j>=1;j--)
-    {
-    for(i=1;i<=j;i++)
-    {
-        cout<<"*";
-    }
-    for(i=1;i<=2*row-2*j;i++)
-    {
-        cout<<" ";
-    }
-    for(i=1;i<=j;i++)
-    {
-        cout<<"*";
-    }
-    cout<<endl;
-    }
-    return 0;
-}
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int row,col,i,j;
+//     cin>>row;
+//     for(j=1;j<=row;j++)
+//     {
+//     for(i=1;i<=j;i++)
+//     {
+//         cout<<"*";
+//     }
+//     for(i=1;i<=2*row-2*j;i++)
+//     {
+//         cout<<" ";
+//     }
+//     for(i=1;i<=j;i++)
+//     {
+//         cout<<"*";
+//     }
+//     cout<<endl;
+//     }
+//     for(j=row-1;j>=1;j--)
+//     {
+//     for(i=1;i<=j;i++)
+//     {
+//         cout<<"*";
+//     }
+//     for(i=1;i<=2*row-2*j;i++)
+//     {
+//         cout<<" ";
+//     }
+//     for(i=1;i<=j;i++)
+//     {
+//         cout<<"*";
+//     }
+//     cout<<endl;
+//     }
+//     return 0;
+// }
+
+
 
 
 
