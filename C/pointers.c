@@ -32,18 +32,18 @@
 // }
 
 
-#include<stdio.h>
-void changevalue(int* adress)
-{
-    *adress =345;
-}
-int main()
-{
- int a =49,b=34;
- printf("%d\n",a);
- changevalue(&a); 
- printf("%d",a);
- return 0;
-}
+// #include<stdio.h>
+// void changevalue(int* adress)
+// {
+//     *adress =345;
+// }
+// int main()
+// {
+//  int a =49,b=34;
+//  printf("%d\n",a);
+//  changevalue(&a); 
+//  printf("%d",a);
+//  return 0;
+// }
 
 
