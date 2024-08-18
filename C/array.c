@@ -519,20 +519,236 @@
 //     return 0;
 // }
 
-#include <stdio.h>
-int main()
-{
-    int arr[7] = {1, 2, 7, 4, 5, 6, 7};
-    for (int i = 0; i <= 6; i++)
-    {
-        for (int j = i + 1; j <= 6; j++)
-        {
-            if (arr[i] == arr[j])
-            {
-                printf("%d is duplicate", arr[i]);
-                break;
-            }
-        }
-    }
-    return 0;
-}
+// #include <stdio.h>
+// int main()
+// {
+//     int arr[7] = {1, 2, 7, 4, 5, 6, 7};
+//     for (int i = 0; i <= 6; i++)
+//     {
+//         for (int j = i + 1; j <= 6; j++)
+//         {
+//             if (arr[i] == arr[j])
+//             {
+//                 printf("%d is duplicate", arr[i]);
+//                 break;
+//             }
+//         }
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int arr[3][2] = {{1, 2}, {3, 4}, {5, 6}};
+//     // arr[0][0]=1;
+//     // arr[0][1]=2;
+//     // arr[1][0]=3;
+//     // arr[1][1]=4;
+//     for (int i = 0; i <= 2; i++)
+//     {
+//         for (int j = 0; j <= 1; j++)
+//         {
+//             printf(" %d ", arr[i][j]);
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int arr[3][2];
+//     for (int i = 0; i <= 2; i++)
+//     {
+//         for (int j = 0; j <= 1; j++)
+//         {
+//             scanf(" %d ", &arr[i][j]);
+//         }
+//         printf("\n");
+//     }
+
+//     for (int i = 0; i <= 2; i++)
+//     {
+//         for (int j = 0; j <= 1; j++)
+//         {
+//             printf(" %d ", arr[i][j]);
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int r, c;
+//     scanf("%d", &r);
+//     scanf("%d", &c);
+//     int arr[r][c];
+//     for (int i = 0; i < r; i++)
+//     {
+//         for (int j = 0; j < c; j++)
+//         {
+//             scanf(" %d ", &arr[i][j]);
+//         }
+//         printf("\n");
+//     }
+
+//     for (int i = 0; i < r; i++)
+//     {
+//         for (int j = 0; j < c; j++)
+//         {
+//             printf(" %d ", arr[i][j]);
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int  c;
+//     scanf("%d", &c);
+//     int arr[4][c];
+//     for (int i = 0; i < 4; i++)
+//     {
+//         for (int j = 0; j < c; j++)
+//         {
+//             scanf(" %d ", &arr[i][j]);
+//         }
+//         printf("\n");
+//     }
+
+//     for (int i = 0; i < 4; i++)
+//     {
+//         for (int j = 0; j < c; j++)
+//         {
+//             printf(" %d ", arr[i][j]);
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+
+//     int arr[5][5];
+//     for (int i = 0; i < 5; i++)
+//     {
+//         for (int j = 0; j < 5; j++)
+//         {
+//             scanf(" %d ", &arr[i][j]);
+//         }
+//         printf("\n");
+//     }
+
+//     for (int i = 0; i < 5; i++)
+//     {
+//         for (int j = 0; j < 5; j++)
+//         {
+//             printf(" %d ", arr[i][j]);
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int i, j;
+//     int arr[2][2] = {{1, 2}, {2, 3}};
+//     int brr[2][2] = {{1, 2}, {5, 6}};
+//     int result[2][2];
+
+//     for (int i = 0; i < 2; i++)
+//     {
+//         for (int j = 0; j < 2; j++)
+//         {
+//             printf(" %d ", arr[i][j]);
+//         }
+//         printf("\n");
+//     }
+
+//     for (int i = 0; i < 2; i++)
+//     {
+//         for (int j = 0; j < 2; j++)
+//         {
+//             printf(" %d ", brr[i][j]);
+//         }
+//         printf("\n");
+//     }
+
+//     for (int i = 0; i < 2; i++)
+//     {
+//         for (int j = 0; j < 2; j++)
+//         {
+//             result[i][j] = arr[i][j] + brr[i][j];
+//         }
+//     }
+
+//     for (int i = 0; i < 2; i++)
+//     {
+//         for (int j = 0; j < 2; j++)
+//         {
+//             printf(" %d ", result[i][j]);
+//         }
+//         printf("\n");
+//     }
+
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int r, c;
+//     scanf("%d", &r);
+//     scanf("%d", &c);
+//     int arr[r][c];
+//     for (int i = 0; i < r; i++)
+//     {
+//         for (int j = 0; j < c; j++)
+//         {
+//             scanf(" %d ", &arr[i][j]);
+//         }
+//         printf("\n");
+//     }
+
+//     for (int i = 0; i < r; i++)
+//     {
+//         for (int j = 0; j < c; j++)
+//         {
+//             printf(" %d ", arr[i][j]);
+//         }
+//         printf("\n");
+//     }
+
+//     int sum = 0;
+//     for (int i = 0; i < r; i++)
+//     {
+//         for (int j = 0; j < c; j++)
+//         {
+//             sum = sum + arr[i][j];
+//         }
+//     }
+//     printf(" %d ", sum);
+
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int arr[5] = {1, 2, 3, 4, 5};
+//     for (int i = 4; i >= 0; i--)
+//     {
+//         printf("%d", arr[i]);
+//     }
+//     return 0;
+// }
