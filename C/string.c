@@ -258,6 +258,8 @@
 // }
 
 
+
+
 // #include <stdio.h>
 // #include <string.h>
 
@@ -277,6 +279,9 @@
 
 //     return 0;
 // }
+
+
+
 
 // #include <stdio.h>
 // #include <string.h>
@@ -301,6 +306,10 @@
 //     printf("Occurrences of '%c': %d\n", c, occurrences);
 //     return 0;
 // }
+
+
+
+
 
 
 // #include <stdio.h>
