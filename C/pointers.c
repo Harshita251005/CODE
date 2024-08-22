@@ -126,4 +126,88 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+// int main()
+// {
+//     int a = 10;
+//     int *ptra = &a;
+//     printf("%p\n", &a);  // for address of x
+//     printf("%d", *ptra); // for value of nx
+//     return 0;
+// }
+
+// #include <stdio.h>
+// void address(int i)
+// {
+//     printf("address inside functio =%p\n", &i);
+// }
+// int main()
+// {
+//     int i = 10;
+//     printf("address inside main =%p", &i);
+
+//     address(i);
+
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// void multiplyBy10(int *x)
+// {
+
+//     *x = *x * 10;
+// }
+
+// int main()
+// {
+//     int num = 5;
+//     printf("Original value: %d\n", num);
+
+//     multiplyBy10(&num);
+
+//     printf("New value: %d\n", num);
+
+//     return 0;
+// }
+
+
+// #include <stdio.h>
+
+// void calculateSumAndAverage(int a, int b, int *sum, float *average)
+// {
+//   *sum = a + b;
+//   *average = (float)(*sum) / 2.0;
+// }
+
+// int main() {
+//   int num1, num2, sum;
+//   float average;
+
+//   printf("Enter two numbers: ");
+//   scanf("%d %d", &num1, &num2);
+
+//   calculateSumAndAverage(num1, num2, &sum, &average);
+
+//   printf("Sum: %d\n", sum);
+//   printf("Average: %.2f\n", average);
+
+//   return 0;
+// }
+
+
+// #include <stdio.h>
+
+// int main() {
+//   int i = 10;
+//   int *p = &i;  // p is a pointer to int
+//   int **pp = &p;  // pp is a pointer to pointer to int
+
+//   printf("Value of i: %d\n", i);
+//   printf("Value of i using p: %d\n", *p);
+//   printf("Value of i using pp: %d\n", **pp);
+
+//   return 0;
+// }
+
 
