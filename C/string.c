@@ -137,3 +137,39 @@
 // }
 
 
+// #include <stdio.h>
+
+// int main() {
+//     char str[100], ch;
+
+//     printf("Enter a string: ");
+//     scanf("%s", str); 
+
+//     printf("Enter a character: ");
+//     scanf(" %c", &ch); 
+
+//     printf("You entered: %s and %c\n", str, ch);
+
+//     return 0;
+// }
+
+
+// #include <stdio.h>
+
+// int my_strlen(const char *str) {
+//     int len = 0;
+//     while (*str != '\0') {
+//         len++;
+//         str++;
+//     }
+//     return len;
+// }
+
+// int main() {
+//     char str[] = "hello";
+//     int len = my_strlen(str);
+//     printf("Length of string: %d\n", len);
+//     return 0;
+// }
+
+
