@@ -173,3 +173,159 @@
 // }
 
 
+// #include <stdio.h>
+// #include <string.h>
+
+// void slice(char *str, int m, int n) {
+//     int len = strlen(str);
+//     if (m < 0 || n > len || m > n) {
+//         printf("Invalid slice indices\n");
+//         return;
+//     }
+
+//     // Shift the characters to the left
+//     for (int i = m; i <= n; i++) {
+//         str[i - m] = str[i];
+//     }
+
+//     // Null-terminate the string
+//     str[n - m + 1] = '\0';
+// }
+
+// int main() {
+//     char str[] = "hello world";
+//     printf("Original string: %s\n", str);
+
+//     slice(str, 6, 10);
+//     printf("Sliced string: %s\n", str);
+
+//     return 0;
+// }
+
+
+// #include <stdio.h>
+
+// char *my_strcpy(char *dest, const char *src) {
+
+//     char *original_dest = dest;
+
+//     while (*src != '\0') {
+//         *dest = *src;  
+//         dest++;      
+//         src++;        
+//     }
+
+    
+//     *dest = '\0';
+
+    
+//     return original_dest;
+// }
+
+// int main() {
+//     char source[] = "Hello, World!";
+//     char destination[50];
+
+//     // Copy the string from source to destination
+//     my_strcpy(destination, source);
+
+//     // Print the result
+//     printf("Source: %s\n", source);
+//     printf("Destination: %s\n", destination);
+
+//     return 0;
+// }
+
+
+// #include <stdio.h>
+// #include <string.h>
+
+// void encrypt_string(char* str) {
+//     int i;
+//     for (i = 0; i < strlen(str); i++) {
+//         str[i] = str[i] + 1; // add 1 to the ASCII value of each character
+//     }
+// }
+
+// int main() {
+//     char str[] = "Hello, World!";
+//     printf("Original string: %s\n", str);
+
+//     encrypt_string(str);
+//     printf("Encrypted string: %s\n", str);
+
+//     return 0;
+// }
+
+
+// #include <stdio.h>
+// #include <string.h>
+
+// void decrypt_string(char* str) {
+//     int i;
+//     for (i = 0; i < strlen(str); i++) {
+//         str[i] = str[i] - 1; // subtract 1 from the ASCII value of each character
+//     }
+// }
+
+// int main() {
+//     char str[] = "Ifmmp, Xpsme!"; // encrypted string
+//     printf("Encrypted string: %s\n", str);
+
+//     decrypt_string(str);
+//     printf("Decrypted string: %s\n", str);
+
+//     return 0;
+// }
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int count_char_occurrences(char* str, char c) {
+//     int count = 0;
+//     int i;
+//     for (i = 0; i < strlen(str); i++) {
+//         if (str[i] == c) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+
+// int main() {
+//     char str[] = "Hello, World!";
+//     char c = 'o';
+//     printf("String: %s\n", str);
+//     printf("Character to search for: %c\n", c);
+//     int occurrences = count_char_occurrences(str, c);
+//     printf("Occurrences of '%c': %d\n", c, occurrences);
+//     return 0;
+// }
+
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int char_present(char* str, char c) {
+//     int i;
+//     for (i = 0; i < strlen(str); i++) {
+//         if (str[i] == c) {
+//             return 1; // character found, return 1
+//         }
+//     }
+//     return 0; // character not found, return 0
+// }
+
+// int main() {
+//     char str[] = "Hello, World!";
+//     char c = 'o';
+//     printf("String: %s\n", str);
+//     printf("Character to search for: %c\n", c);
+//     int result = char_present(str, c);
+//     if (result == 1) {
+//         printf("Character '%c' is present in the string.\n", c);
+//     } else {
+//         printf("Character '%c' is not present in the string.\n", c);
+//     }
+//     return 0;
+// }
