@@ -136,23 +136,21 @@
 //     return 0;
 // }
 
-
 // #include <stdio.h>
 
 // int main() {
 //     char str[100], ch;
 
 //     printf("Enter a string: ");
-//     scanf("%s", str); 
+//     scanf("%s", str);
 
 //     printf("Enter a character: ");
-//     scanf(" %c", &ch); 
+//     scanf(" %c", &ch);
 
 //     printf("You entered: %s and %c\n", str, ch);
 
 //     return 0;
 // }
-
 
 // #include <stdio.h>
 
@@ -171,7 +169,6 @@
 //     printf("Length of string: %d\n", len);
 //     return 0;
 // }
-
 
 // #include <stdio.h>
 // #include <string.h>
@@ -202,7 +199,6 @@
 //     return 0;
 // }
 
-
 // #include <stdio.h>
 
 // char *my_strcpy(char *dest, const char *src) {
@@ -210,15 +206,13 @@
 //     char *original_dest = dest;
 
 //     while (*src != '\0') {
-//         *dest = *src;  
-//         dest++;      
-//         src++;        
+//         *dest = *src;
+//         dest++;
+//         src++;
 //     }
 
-    
 //     *dest = '\0';
 
-    
 //     return original_dest;
 // }
 
@@ -235,7 +229,6 @@
 
 //     return 0;
 // }
-
 
 // #include <stdio.h>
 // #include <string.h>
@@ -257,9 +250,6 @@
 //     return 0;
 // }
 
-
-
-
 // #include <stdio.h>
 // #include <string.h>
 
@@ -279,9 +269,6 @@
 
 //     return 0;
 // }
-
-
-
 
 // #include <stdio.h>
 // #include <string.h>
@@ -306,11 +293,6 @@
 //     printf("Occurrences of '%c': %d\n", c, occurrences);
 //     return 0;
 // }
-
-
-
-
-
 
 // #include <stdio.h>
 // #include <string.h>
@@ -338,3 +320,49 @@
 //     }
 //     return 0;
 // }
+
+#include <stdio.h>
+#include <string.h>
+
+void parser(char *string)
+{
+    int in = 0;
+    int index = 0;
+    for (int i = 0; i < strlen(string); i++)
+    {
+        if (string[i] == '<')
+        {
+            in = 1;
+            continue;
+        }
+        else if (string[i] == '>')
+        {
+            in = 0;
+            continue;
+        }
+        if (in == 0)
+        {
+            string[index] = string[i];
+            index++;
+        }
+    }
+    string[index] = '\0';
+    while (string[0] == ' ')
+    {
+        for (int i = 0; i < strlen(string); i++)
+        {
+            string[i] = string[i + 1];
+        }
+    }
+    while (string[strlen(string) - 1] == ' ')
+    {
+        string[strlen(string) - 1] = '\0';
+    }
+}
+int main()
+{
+    char string[] = "<h1>     this is a heading      <h1>";
+    parser(string);
+    printf("the parsed string is~~%s~~", string);
+    return 0;
+}
