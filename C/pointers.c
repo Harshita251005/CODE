@@ -287,10 +287,6 @@
 //     return 0;
 // }
 
-
-
-
-
 // #include<stdio.h>
 // #include<stdlib.h>
 // int main()
@@ -304,10 +300,6 @@
 //     return 0;
 // }
 
-
-
-
-
 // #include <stdio.h>
 // int main(int argc, char const *argv[])
 // {
@@ -318,10 +310,6 @@
 //     }
 //     return 0;
 // }
-
-
-
-
 
 // #include <stdio.h>
 // #include <stdlib.h>
@@ -342,10 +330,6 @@
 //     printf("the value of d  is %d\n",d);
 //     return 0;
 // }
-
-
-
-
 
 // #include <stdio.h>
 // #include <stdlib.h>
@@ -373,8 +357,6 @@
 //     return 0;
 // }
 
-
-
 // #include<stdio.h>
 // #include<string.h>
 // #include<stdlib.h>
@@ -396,7 +378,6 @@
 //     return 0;
 
 // }
-
 
 // #include <stdio.h>
 // #include <stdlib.h>
@@ -442,8 +423,6 @@
 
 //     return 0;
 // }
-
-
 
 // #include <stdio.h>
 
@@ -505,8 +484,6 @@
 //     return 0;
 // }
 
-
-
 // #include <stdio.h>
 
 // int main() {
@@ -532,8 +509,6 @@
 //     return 0;
 // }
 
-
-
 // #include <stdio.h>
 // #include <math.h>
 
@@ -558,5 +533,59 @@
 
 //     printf("The area of the circle is: %.2f\n", area);
 
+//     return 0;
+// }
+
+
+
+
+// #include<stdio.h>
+// #include<stdbool.h>
+// #include<stdlib.h>
+// int main()
+// {
+//     int n;
+//     printf("enter no. of integer u want =");
+//     scanf("%d",&n);
+//     int * ptr = (int*) malloc(n*sizeof(int));
+//     int * p =ptr;
+//     for(int i=1;i<=n;i++){
+//         scanf("%d",&(*ptr));
+//         ptr++;
+//     }
+//     for(int i=1;i<=n;i++){
+//         printf("%d\n",(*p));
+//     }
+//     return 0;
+// }
+
+
+
+
+// #include <stdio.h>
+// #include <stdbool.h>
+// #include <stdlib.h>
+// int main()
+// {
+//     //     int x = 9;
+//     //     int* ptr = NULL;
+//     //     printf("%p",ptr);
+//     int *ptr = (int *)callac(10, 4);
+//     int *p = ptr;
+//     ptr--;
+//     free(p);
+//     return 0;
+// }
+
+
+
+// #include<stdio.h>
+// #include<stdlib.h>
+// int main()
+// {
+//     int * ptr = malloc(10*4);
+//     printf("%p\n",ptr);
+//     ptr = realloc(ptr,20000*4);
+//     printf("%p",ptr);
 //     return 0;
 // }
