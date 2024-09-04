@@ -171,7 +171,6 @@
 //     return 0;
 // }
 
-
 // #include <stdio.h>
 
 // void calculateSumAndAverage(int a, int b, int *sum, float *average)
@@ -195,7 +194,6 @@
 //   return 0;
 // }
 
-
 // #include <stdio.h>
 
 // int main() {
@@ -210,7 +208,6 @@
 //   return 0;
 // }
 
-
 // #include<stdio.h>
 // int main()
 // {
@@ -224,4 +221,342 @@
 //     return 0;
 // }
 
+// #include<stdio.h>
+// int main()
+// {
+//     int a = 34;
+//     int *ptr = &a;
+//     if(ptr !=NULL){
+//         printf("The address of a is %d\n",ptr);
+//     }
+//     else{
+//         printf("The pointe is a null pointer and cannot be dereferenced");
+//     }
+//     return 0;
+// }
 
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int *functionDangling()
+// {
+//     int a, b, sum;
+//     a = 34;
+//     b = 364;
+//     sum = a + b;
+//     return &sum;
+// }
+// int main()
+// {
+//     //  Case1 : deallocation of a memory block
+
+//     int *ptr= (int *) malloc(7* sizeof(int));
+//     ptr[0]=34;
+//     ptr[1]=36;
+//     ptr[2]=64;
+//     ptr[3]=5;
+//     free(ptr);  //ptr is now a dangling pointer
+
+//     // Case2 : function returning local variable address
+//     int *dangptr = functiondangling(); //ptr is now a dangling pointer
+
+//     int * danglingptr3;
+
+//     //Case3 : if a variable goes out of scope
+
+//     {
+//         int a =12;
+
+//         danglingptr3 = &a;
+//     }
+
+//     //Here variable  a goes out of scope which means danglingptr3 is pointing to a location which is freed and hence danglingptr3 is now a dangling pointer
+
+//     return 0;
+// }
+
+// #include<stdio.h>
+// #include<stdlib.h>
+// int main()
+// {
+//     int a = 334;
+//     int *ptr;
+//     *ptr = 34;
+//     ptr = &a;
+//     printf("The value of a is %d\n",*ptr);
+//     return 0;
+// }
+
+
+
+
+
+// #include<stdio.h>
+// #include<stdlib.h>
+// int main()
+// {
+//     // printf("file name is %s\n",__FILE__);
+//     // printf("today date is %s\n",__DATE__);
+//     // printf("time now is %s\n",__TIME__);
+//     printf("line no. is %d\n",__LINE__);
+//     // printf("ANSI : %d\n",__STDC__);
+
+//     return 0;
+// }
+
+
+
+
+
+// #include <stdio.h>
+// int main(int argc, char const *argv[])
+// {
+//     printf("the value of argc  is %d \n", argc);
+//     for (int i = 0; i < argc; i++)
+//     {
+//         printf("this argument at index number %d has a value of %s \n", i, argv[i]);
+//     }
+//     return 0;
+// }
+
+
+
+
+
+// #include <stdio.h>
+// #include <stdlib.h>
+// int sum(int a, int b)
+// {
+//     return a + b;
+// }
+// void greet()
+// {
+//     printf("Hello world my user good morning %d\n");
+// }
+// int main()
+// {
+//     printf("The sum of 1 and 2 is  %d\n", sum(1, 2));
+//     int (*fptr) (int, int);
+//     fptr = &sum;
+//     int d = (*fptr) (4,6);
+//     printf("the value of d  is %d\n",d);
+//     return 0;
+// }
+
+
+
+
+
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int sum(int a, int b)
+// {
+//     return a + b;
+// }
+
+// void greethelloandexecute(int (*fptr)(int, int)){
+//     printf("Hello user \n");
+//     printf("The sum of 5 and 7 is %d\n",fptr(5,7));
+// }
+
+// void greetgmandexecute(int (*fptr)(int,int))
+// {
+//     printf("good morning user \n");
+//     printf(" the sum of 5 and 7 is %d\n",fptr(5,7));
+// }
+// int main()
+// {
+//     int (*ptr)(int, int);
+//     ptr = sum;
+//     greetgmandexecute(ptr);
+//     return 0;
+// }
+
+
+
+// #include<stdio.h>
+// #include<string.h>
+// #include<stdlib.h>
+// int main()
+// {
+// int chars, i=0;
+// char *ptr;
+// while (i<3)
+// {
+//     printf("employee %d: enter the no. of character in your employee id\n",i+1);
+//     scanf("%d",&chars);
+//     ptr = (char *) malloc((chars*1)*sizeof (char));
+//     printf("enter your employee id \n");
+//     scanf("%s",ptr);
+//     printf("your employee id is %s\n",ptr);
+//     free(ptr);
+//     i=i+1;
+// }
+//     return 0;
+
+// }
+
+
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <time.h>
+
+// // Function to generate a random choice for the computer
+// int getComputerChoice() {
+//     return rand() % 3 + 1; // 1 for Rock, 2 for Paper, 3 for Scissor
+// }
+
+// // Function to determine the winner
+// void determineWinner(int userChoice, int computerChoice) {
+//     if (userChoice == computerChoice) {
+//         printf("It's a tie!\n");
+//     } else if ((userChoice == 1 && computerChoice == 3) ||
+//                (userChoice == 2 && computerChoice == 1) ||
+//                (userChoice == 3 && computerChoice == 2)) {
+//         printf("You win!\n");
+//     } else {
+//         printf("Computer wins!\n");
+//     }
+// }
+
+// int main() {
+//     srand(time(NULL)); // Seed the random number generator
+
+//     int userChoice;
+//     while (1) {
+//         printf("Enter your choice (1 for Rock, 2 for Paper, 3 for Scissor): ");
+//         scanf("%d", &userChoice);
+
+//         if (userChoice >= 1 && userChoice <= 3) {
+//             break;
+//         } else {
+//             printf("Invalid choice. Please enter a number between 1 and 3.\n");
+//         }
+//     }
+
+//     int computerChoice = getComputerChoice();
+//     printf("Computer chose: %d\n", computerChoice);
+
+//     determineWinner(userChoice, computerChoice);
+
+//     return 0;
+// }
+
+
+
+// #include <stdio.h>
+
+// int main() {
+//     int rowsA = 2;
+//     int colsA = 3;
+//     int colsB = 2;
+
+//     // Initialize matrices A and B
+//     int matrixA[rowsA][colsA] = {
+//         {1, 2, 3},
+//         {4, 5, 6}
+//     };
+
+//     int matrixB[colsA][colsB] = {
+//         {7, 8},
+//         {9, 10},
+//         {11, 12}
+//     };
+
+//     // Initialize matrix C
+//     int matrixC[rowsA][colsB];
+
+//     // Multiply matrices A and B
+//     for (int i = 0; i < rowsA; i++) {
+//         for (int j = 0; j < colsB; j++) {
+//             matrixC[i][j] = 0;
+//             for (int k = 0; k < colsA; k++) {
+//                 matrixC[i][j] += matrixA[i][k] * matrixB[k][j];
+//             }
+//         }
+//     }
+
+//     // Print matrices A, B, and C
+//     printf("Matrix A:\n");
+//     for (int i = 0; i < rowsA; i++) {
+//         for (int j = 0; j < colsA; j++) {
+//             printf("%d ", matrixA[i][j]);
+//         }
+//         printf("\n");
+//     }
+
+//     printf("Matrix B:\n");
+//     for (int i = 0; i < colsA; i++) {
+//         for (int j = 0; j < colsB; j++) {
+//             printf("%d ", matrixB[i][j]);
+//         }
+//         printf("\n");
+//     }
+
+//     printf("Matrix C (A x B):\n");
+//     for (int i = 0; i < rowsA; i++) {
+//         for (int j = 0; j < colsB; j++) {
+//             printf("%d ", matrixC[i][j]);
+//         }
+//         printf("\n");
+//     }
+
+//     return 0;
+// }
+
+
+
+// #include <stdio.h>
+
+// int main() {
+//     int num, reversedNum = 0, originalNum;
+
+//     printf("Enter a number: ");
+//     scanf("%d", &num);
+
+//     originalNum = num;
+
+//     while (num != 0) {
+//         int digit = num % 10;
+//         reversedNum = reversedNum * 10 + digit;
+//         num /= 10;
+//     }
+
+//     if (originalNum == reversedNum) {
+//         printf("%d is a palindrome number.\n", originalNum);
+//     } else {
+//         printf("%d is not a palindrome number.\n", originalNum);
+//     }
+
+//     return 0;
+// }
+
+
+
+// #include <stdio.h>
+// #include <math.h>
+
+// // Function to calculate the area of a circle
+// float calculate_area(float radius) {
+//     return M_PI * radius * radius;
+// }
+
+// int main() {
+//     // Declare a function pointer
+//     float (*area_func)(float);
+
+//     // Assign the address of the calculate_area function to the function pointer
+//     area_func = calculate_area;
+
+//     float radius;
+//     printf("Enter the radius of the circle: ");
+//     scanf("%f", &radius);
+
+//     // Call the function using the function pointer
+//     float area = area_func(radius);
+
+//     printf("The area of the circle is: %.2f\n", area);
+
+//     return 0;
+// }

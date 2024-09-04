@@ -829,3 +829,93 @@
 
 
 
+// #include <stdio.h>
+
+// struct Item {
+//     char name[20];
+//     int quantity;
+//     float price;
+// };
+
+// int main() {
+//     int n;
+//     printf("Enter the number of items: ");
+//     scanf("%d", &n);
+
+//     struct Item items[n];
+
+//     float total = 0.0;
+
+//     printf("Enter the details of each item:\n");
+//     for (int i = 0; i < n; i++) {
+//         printf("Item %d:\n", i + 1);
+//         printf("Name: ");
+//         scanf("%s", items[i].name);
+//         printf("Quantity: ");
+//         scanf("%d", &items[i].quantity);
+//         printf("Price: ");
+//         scanf("%f", &items[i].price);
+
+//         total += items[i].quantity * items[i].price;
+//     }
+
+//     printf("\nBill:\n");
+//     printf("Item\tQuantity\tPrice\tTotal\n");
+//     for (int i = 0; i < n; i++) {
+//         printf("%s\t%d\t%.2f\t%.2f\n", items[i].name, items[i].quantity, items[i].price, items[i].quantity * items[i].price);
+//     }
+
+//     printf("\nTotal: %.2f\n", total);
+
+//     return 0;
+// }
+
+
+
+
+// #include <stdio.h>
+
+// int main() {
+//     int choice;
+//     float num1, num2, result;
+
+//     printf("Simple Calculator\n");
+//     printf("1. Add\n");
+//     printf("2. Subtract\n");
+//     printf("3. Multiply\n");
+//     printf("4. Divide\n");
+//     printf("Enter your choice (1/2/3/4): ");
+//     scanf("%d", &choice);
+
+//     printf("Enter two numbers: ");
+//     scanf("%f %f", &num1, &num2);
+
+//     switch (choice) {
+//         case 1:
+//             result = num1 + num2;
+//             printf("%.2f + %.2f = %.2f\n", num1, num2, result);
+//             break;
+//         case 2:
+//             result = num1 - num2;
+//             printf("%.2f - %.2f = %.2f\n", num1, num2, result);
+//             break;
+//         case 3:
+//             result = num1 * num2;
+//             printf("%.2f * %.2f = %.2f\n", num1, num2, result);
+//             break;
+//         case 4:
+//             if (num2 != 0) {
+//                 result = num1 / num2;
+//                 printf("%.2f / %.2f = %.2f\n", num1, num2, result);
+//             } else {
+//                 printf("Error: Division by zero is not allowed.\n");
+//             }
+//             break;
+//         default:
+//             printf("Invalid choice. Please enter a number between 1 and 4.\n");
+//     }
+
+//     return 0;
+// }
+
+
