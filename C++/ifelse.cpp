@@ -23,7 +23,6 @@
 // return 0;
 // }
 
-
 // #include<iostream>
 // using namespace std;
 // int main()
@@ -38,8 +37,6 @@
 // }
 // return 0;
 // }
-
-
 
 // #include<iostream>
 // using namespace std;
@@ -56,8 +53,6 @@
 // return 0;
 // }
 
-
-
 // #include<iostream>
 // using namespace std;
 // int main()
@@ -72,7 +67,6 @@
 // }
 // return 0;
 // }
-
 
 // #include<iostream>
 // using namespace std;
@@ -108,7 +102,6 @@
 // return 0;
 // }
 
-
 // #include<iostream>
 // using namespace std;
 // int main()
@@ -123,7 +116,6 @@
 // }
 // return 0;
 // }
-
 
 // #include<iostream>
 // using namespace std;
@@ -150,3 +142,42 @@
 // }
 // return 0;
 // }
+
+// #include<iostream>
+// using namespace std;
+
+// int main() {
+//     long long A, B, C, D;
+//     cin >> A >> B >> C >> D;
+
+//     long long result = (A % 100) % 100 * (B % 100) % 100 * (C % 100) % 100 * (D % 100) % 100;
+
+//     if(result < 10) {
+//         cout << "0" << result << endl;
+//     } else {
+//         cout << result << endl;
+//     }
+
+//     return 0;
+// }
+
+
+
+
+#include <iostream>
+using namespace std;
+
+long long range_sum(long long l, long long r) {
+    return (r * (r + 1) - l * (l - 1)) / 2;
+}
+
+int main() {
+    int T;
+    cin >> T;
+    for (int i = 0; i < T; i++) {
+        long long l, r;
+        cin >> l >> r;
+        cout << range_sum(l, r) <<endl;
+    }
+    return 0;
+}
