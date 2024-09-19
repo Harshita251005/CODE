@@ -9,7 +9,6 @@
 //     return 0;
 // }
 
-
 // #include<iostream>
 // using namespace std;
 
@@ -34,7 +33,6 @@
 //     return 0;
 // }
 
-
 // #include<iostream>
 // using namespace std;
 
@@ -46,7 +44,6 @@
 //     }
 //     return 0;
 // }
-
 
 // #include<iostream>
 // using namespace std;
@@ -85,8 +82,6 @@
 //     return 0;
 // }
 
-
-
 // #include<iostream>
 // using namespace std;
 
@@ -99,7 +94,6 @@
 //     return 0;
 // }
 
-
 // #include<iostream>
 // using namespace std;
 
@@ -111,7 +105,6 @@
 //     }
 //     return 0;
 // }
-
 
 // #include<iostream>
 // using namespace std;
@@ -143,8 +136,6 @@
 //     return 0;
 // }
 
-
-
 // #include<iostream>
 // using namespace std;
 
@@ -158,7 +149,6 @@
 //     cout<<sum<<endl;
 //     return 0;
 // }
-
 
 // #include<iostream>
 // using namespace std;
@@ -185,8 +175,6 @@
 //     return 0;
 // }
 
-
-
 // #include<iostream>
 // using namespace std;
 
@@ -200,7 +188,6 @@
 //     cout<<fact<<endl;
 //     return 0;
 // }
-
 
 // #include<iostream>
 // using namespace std;
@@ -223,14 +210,13 @@
 //                 cout<<"not prime";
 //                 return 0;
 //             }
-            
+
 //         }
 //         cout<<"prime";
 //         return 0;
 //     }
 
 // }
-
 
 // #include<iostream>
 // using namespace std;
@@ -250,8 +236,6 @@
 //     return 0;
 // }
 
-
-
 // #include<iostream>
 // using namespace std;
 
@@ -266,8 +250,6 @@
 //     }
 //     return 0;
 // }
-
-
 
 // #include<iostream>
 // using namespace std;
@@ -286,8 +268,6 @@
 //     }
 //     return 0;
 // }
-
-
 
 // #include<iostream>
 // using namespace std;
@@ -329,7 +309,6 @@
 //      return 0;
 // }
 
-
 // #include<iostream>
 // using namespace std;
 
@@ -350,7 +329,6 @@
 //      return 0;
 // }
 
-
 // #include<iostream>
 // using namespace std;
 
@@ -370,7 +348,6 @@
 //     }
 //      return 0;
 // }
-
 
 // #include<iostream>
 // using namespace std;
@@ -510,7 +487,6 @@
 //      return 0;
 // }
 
-
 // #include<iostream>
 // using namespace std;
 
@@ -528,7 +504,6 @@
 //     }
 //      return 0;
 // }
-
 
 // #include<iostream>
 // using namespace std;
@@ -549,7 +524,6 @@
 //      return 0;
 // }
 
-
 // #include<iostream>
 // using namespace std;
 
@@ -567,8 +541,6 @@
 //     }
 //      return 0;
 // }
-
-
 
 // #include<iostream>
 // using namespace std;
@@ -605,7 +577,6 @@
 //     }
 //      return 0;
 // }
-
 
 // #include<iostream>
 // using namespace std;
@@ -647,7 +618,6 @@
 //      return 0;
 // }
 
-
 // #include<iostream>
 // using namespace std;
 // int main()
@@ -667,8 +637,6 @@
 //     }
 //      return 0;
 // }
-
-
 
 // #include<iostream>
 // using namespace std;
@@ -691,7 +659,6 @@
 //      return 0;
 // }
 
-
 // #include<iostream>
 // using namespace std;
 // int main()
@@ -711,8 +678,6 @@
 //     }
 //      return 0;
 // }
-
-
 
 // #include<iostream>
 // using namespace std;
@@ -735,7 +700,6 @@
 //      return 0;
 // }
 
-
 // #include<iostream>
 // using namespace std;
 // int main()
@@ -751,15 +715,13 @@
 //     }
 //     for(i=1;i<=j;i++)
 //         cout<<i;
-    
+
 //     for(i=j-1;i>=1;i--)
 //         cout<<i;
 //         cout<<endl;
 //     }
 //      return 0;
 // }
-
-
 
 // #include<iostream>
 // using namespace std;
@@ -778,7 +740,6 @@
 //     }
 //      return 0;
 // }
-
 
 // #include<iostream>
 // using namespace std;
@@ -809,9 +770,6 @@
 //     }
 //     return 0;
 // }
-
-
-
 
 // #include<iostream>
 // using namespace std;
@@ -857,26 +815,85 @@
 
 
 
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n, i = 0;
+//     cin >> n;
+//     while (i <= n)
+//     {
+//         cout << i  << endl;
+
+//         i=i+2;
+//     }
+
+//     return 0;
+// }
 
 
 
 
 
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n, i = 1;
+//     cin >> n;
+//     while (i <= n)
+//     {
+//         cout << i  << endl;
 
- 
+//         i=i+2;
+//     }
+
+//     return 0;
+// }
 
 
 
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int num;
+//     cout<<"enter the number";
+//     cin>>num;
+//     int rem, ans =0, mul = 1;
+//     while(num>0){
+//         //reminder
+//         rem = num%2;
+//         //quotient
+//         num = num/2;
+//         //ans
+//         ans = rem * mul + ans;
+//         //mul
+//         mul = mul * 10;
+//     }
+//     cout<<ans<<endl;
+//     return 0;
+// }
 
 
- 
-
-
-
-
-
-
- 
-
-
-
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int num;
+//     cout<<"enter the number";
+//     cin>>num;
+//     int rem, ans =0, mul = 1;
+//     while(num>0){
+//         //reminder
+//         rem = num%10;
+//         //quotient
+//         num = num/10;
+//         //ans
+//         ans = rem * mul + ans;
+//         //mul
+//         mul = mul * 2;
+//     }
+//     cout<<ans<<endl;
+//     return 0;
+// }
