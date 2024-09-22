@@ -9,6 +9,9 @@
 //     return 0;
 // }
 
+
+
+
 // #include<iostream>
 // using namespace std;
 
@@ -20,6 +23,10 @@
 //     }
 //     return 0;
 // }
+
+
+
+
 
 // #include<iostream>
 // using namespace std;
@@ -33,6 +40,10 @@
 //     return 0;
 // }
 
+
+
+
+
 // #include<iostream>
 // using namespace std;
 
@@ -44,6 +55,9 @@
 //     }
 //     return 0;
 // }
+
+
+
 
 // #include<iostream>
 // using namespace std;
@@ -60,6 +74,9 @@
 //     return 0;
 // }
 
+
+
+
 // #include<iostream>
 // using namespace std;
 
@@ -71,6 +88,8 @@
 //     return 0;
 // }
 
+
+
 // #include<iostream>
 // using namespace std;
 
@@ -81,6 +100,8 @@
 //     }
 //     return 0;
 // }
+
+
 
 // #include<iostream>
 // using namespace std;
@@ -94,6 +115,8 @@
 //     return 0;
 // }
 
+
+
 // #include<iostream>
 // using namespace std;
 
@@ -106,6 +129,9 @@
 //     return 0;
 // }
 
+
+
+
 // #include<iostream>
 // using namespace std;
 
@@ -117,6 +143,8 @@
 //     }
 //     return 0;
 // }
+
+
 
 // #include<iostream>
 // using namespace std;
@@ -136,6 +164,8 @@
 //     return 0;
 // }
 
+
+
 // #include<iostream>
 // using namespace std;
 
@@ -149,6 +179,8 @@
 //     cout<<sum<<endl;
 //     return 0;
 // }
+
+
 
 // #include<iostream>
 // using namespace std;
@@ -164,6 +196,8 @@
 //     return 0;
 // }
 
+
+
 // #include<iostream>
 // using namespace std;
 
@@ -174,6 +208,8 @@
 //     cout<<(n*(n+1)/2);
 //     return 0;
 // }
+
+
 
 // #include<iostream>
 // using namespace std;
@@ -188,6 +224,9 @@
 //     cout<<fact<<endl;
 //     return 0;
 // }
+
+
+
 
 // #include<iostream>
 // using namespace std;
@@ -218,6 +257,8 @@
 
 // }
 
+
+
 // #include<iostream>
 // using namespace std;
 
@@ -236,6 +277,8 @@
 //     return 0;
 // }
 
+
+
 // #include<iostream>
 // using namespace std;
 
@@ -250,6 +293,8 @@
 //     }
 //     return 0;
 // }
+
+
 
 // #include<iostream>
 // using namespace std;
@@ -268,6 +313,10 @@
 //     }
 //     return 0;
 // }
+
+
+
+
 
 // #include<iostream>
 // using namespace std;
@@ -874,6 +923,7 @@
 //     cout<<ans<<endl;
 //     return 0;
 // }
+
 
 
 // #include<iostream>
