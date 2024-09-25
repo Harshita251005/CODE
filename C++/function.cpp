@@ -102,31 +102,60 @@
 
 // armstrong no.
 
-// #include <iostream>
-// #include <math.h>
-// using namespace std;
-// int count_digit(int num)
-// {
-//    int count = 0;
-//    while (num != 0)
-//    {
-//       num /= 10;
-//       count++;
-//    }
-//    return count;
-// }
-// int armstrong(int n,int digit){
 
-// }
-// int main()
-// {
-//    int num, original_num;
-//    cin >> num;
-//    original_num = num;
-//    int countdigit=count_digit(num);
-//    cout<<countdigit;
-//    return 0;
-// }
+#include <iostream>
+#include <math.h>
+using namespace std;
+int count_digit(int num)
+{
+    int count = 0;
+    while (num != 0)
+    {
+        num /= 10;
+        count++;
+    }
+    return count;
+}
+int armstrong(int n, int digit)
+{
+
+    int ans = 0;
+
+    while (n != 0)
+    {
+
+        int x = n % 10;
+
+        int temp = 1;
+
+        for (int i = 1; i <= digit; i++)
+            temp = temp * x;
+
+        ans += temp;
+
+        n /= 10;
+    }
+
+    return ans;
+}
+int main()
+{
+    int num, original_num;
+    cin >> num;
+    original_num = num;
+    int countdigit = count_digit(num);
+
+    int anss = armstrong(num, countdigit);
+
+    if (anss == num)
+        cout << "Yeyeye";
+    else
+        cout << "nahhhh";
+
+    return 0;
+}
+
+
 
 
 
@@ -159,8 +188,6 @@
 //    return 0;
 // }
 
-
-
 // rectangle form or not
 // #include<iostream>
 // using namespace std;
@@ -177,9 +204,6 @@
 //     return 0;
 // }
 
-
-
-
 // bishop
 //  #include<iostream>
 //  using namespace std;
@@ -194,9 +218,6 @@
 //      cout<<count;
 //      return 0;
 //  }
-
-
-
 
 // nim
 // #include <iostream>
