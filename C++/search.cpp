@@ -422,3 +422,142 @@
 
 //     return ans + k;
 // }
+
+//allocate minimum no of pages
+
+//  int findPages(int N, int A[], int M) {
+//         if(M>N)
+//         return -1;
+
+//         int start=0,end=0,mid,ans;
+//         for(int i=0;i<N;i++){
+//             start = max (start,A[i]);
+//             end+=A[i];
+//         }
+//         while(start<=end)
+//         {
+//             mid=start+(end-start)/2;
+//             int pages =0, count=1;
+//             for(int i=0;i<N;i++)
+//             {
+//                 pages+=A[i];
+//                 if(pages>mid){
+//                     count++;
+//                     pages=A[i];
+//                 }
+//             }
+//             if(count<=M){
+//                 ans=mid;
+//                 end=mid-1;
+//             }
+//             else 
+//             start=mid+1;
+//         }
+//         return ans;
+//     }
+
+
+//painter partition
+// class Solution
+// {
+//   public:
+//     long long minTime(int A[], int N, int M)
+//     {
+//         long long start=0,end=0,mid,ans;
+//         for(int i=0;i<N;i++){
+//             if(start<A[i])
+//             start=A[i];
+//             end+=A[i];
+//         }
+//         while(start<=end)
+//         {
+//             mid=start+(end-start)/2;
+//             long long pages =0, count=1;
+//             for(int i=0;i<N;i++)
+//             {
+//                 pages+=A[i];
+//                 if(pages>mid){
+//                     count++;
+//                     pages=A[i];
+//                 }
+//             }
+//             if(count<=M){
+//                 ans=mid;
+//                 end=mid-1;
+//             }
+//             else 
+//             start=mid+1;
+//         }
+//         return ans;
+//     }
+
+
+//aggressive cows
+
+// class Solution {
+// public:
+
+//     int solve(int n, int k, vector<int> &stalls) {
+//         int start=1,end,mid,ans;
+//         sort(stalls.begin(),stalls.end());
+//         end=stalls[n-1] -stalls[0];
+        
+//         while(start<=end)
+//         {
+//             mid=start+(end-start)/2;
+//             int count =1,pos=stalls[0];
+//             for(int i =0;i<n;i++){
+//                 if(pos+mid<=stalls[i])
+//                 {
+//                     count++;
+//                     pos=stalls[i];
+//                 }
+//             }
+//             if(count<k)
+//             {
+//                 end=mid-1;
+//             }
+//             else
+//             {
+//                 ans=mid;
+//                 start=mid+1;
+//             }
+//         }
+//         return ans;
+//     }
+// };
+
+//koko eating banana
+
+//   int KoKoEat(vector<int>& piles, int h) {
+//         int start=0,end=0,mid,ans,n=piles.size();
+//         long long sum=0;
+//         for(int i=0;i<n;i++){
+//             sum+=piles[i];
+//             end=max(end,piles[i]);
+//         }
+//         start=sum/h;
+//         if(!start)
+//         start=1;
+//         while(start<=end)
+//         {
+//             mid=start+(end-start)/2;
+//             int total_time =0;
+//             for(int i =0;i<n;i++){
+//                 total_time+=piles[i]/mid;
+//                 if(piles[i]%mid)
+//                 total_time++;
+//             }
+//             if(total_time>h)
+//             {
+//                   start=mid+1;
+               
+//             }
+//             else
+//             {
+//                 ans=mid;
+//                  end=mid-1;
+              
+//             }
+//         }
+//         return ans;
