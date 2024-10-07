@@ -928,11 +928,11 @@
 
 // file handling
 
-#include <iostream>
-#include <fstream>
-using namespace std;
-int main()
-{
+// #include <iostream>
+// #include <fstream>
+// using namespace std;
+// int main()
+// {
     // read file
     //     ifstream fin;
     //     //open file
@@ -961,4 +961,4 @@ int main()
     //     fout<<arr[i];
     // };
     // fout.close();
-}
+// }
