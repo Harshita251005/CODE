@@ -933,32 +933,141 @@
 // using namespace std;
 // int main()
 // {
-    // read file
-    //     ifstream fin;
-    //     //open file
-    //     // ofstream fout;
-    //     fin.open("zoom.txt");  //agar nahi create then pehle create karega phir open
-    //     //write kar sakte hae
-    //     // fout<<"hello india";
-    // //fr read karo
-    // char c;
-    // fin>>c;
-    // while(!fin.eof())
-    // {
-    //     cout<<c;
-    //     fin>>c;
-    // }
-    //     fin.close();  //resource release kar payu
+// read file
+//     ifstream fin;
+//     //open file
+//     // ofstream fout;
+//     fin.open("zoom.txt");  //agar nahi create then pehle create karega phir open
+//     //write kar sakte hae
+//     // fout<<"hello india";
+// //fr read karo
+// char c;
+// fin>>c;
+// while(!fin.eof())
+// {
+//     cout<<c;
+//     fin>>c;
+// }
+//     fin.close();  //resource release kar payu
 
-    // vector<int>arr(5);
-    // cout << "enter the input";
-    // for (int i = 0; i < 5; i++)
-    //     cin >> arr[i];
-    // // file ko open karo
-    // ofstream fout;
-    // fout.open("zero.txt");
-    // for(int i=0;i<5;i++){
-    //     fout<<arr[i];
-    // };
-    // fout.close();
+// vector<int>arr(5);
+// cout << "enter the input";
+// for (int i = 0; i < 5; i++)
+//     cin >> arr[i];
+// // file ko open karo
+// ofstream fout;
+// fout.open("zero.txt");
+// for(int i=0;i<5;i++){
+//     fout<<arr[i];
+// };
+// fout.close();
+// }
+
+// ambiguous error //multiple inheritence
+
+// #include<iostream>
+// using namespace std;
+// class school{
+//     public:
+//    void display(){
+//         cout<<"YS"<<endl;
+//     }
+// };
+// class university{
+//     public:
+//     void display(){
+//         cout<<"Chitkara"<<endl;
+//     }
+// };
+// class student:public school,public university{
+//     public:
+//     void show(){
+//         school::display();
+//         university::display();
+//     }
+// };
+// int main()
+// {
+//     student s1;
+//     s1.show();
+//     return 0;
+// }
+
+// diamond problem
+//  #include<iostream>
+//  #include<vector>
+//  using namespace std;
+//  class school{
+//      public:
+//    void display(){
+//          cout<<"YS"<<endl;
+//      }
+//  };
+//  class student: virtual public school{
+
+// };
+// class professor: virtual public school{
+
+// };
+// class university:public student,public professor{
+
+// };
+// int main()
+// {
+//     university u1;
+//     u1.display();
+//     return 0;
+// }
+
+// this
+//  #include <iostream>
+//  using namespace std;
+//  class rectangle
+//  {
+//      int length;
+//      int breadth;
+
+// public:
+//     rectangle(int length, int breadth)
+//     {
+//         this->length = length;
+//         this->breadth = breadth;
+//     }
+//     void display()
+//     {
+//         cout << "area : " << breadth * length;
+//     }
+// };
+
+// int main()
+// {
+//     rectangle r1(4,6);
+//     r1.display();
+//     return 0;
+// }
+
+//overiding use in inhertance
+
+// #include <iostream>
+// using namespace std;
+// class parent
+// {
+//     public:
+//     void display()
+//     {
+//         cout << " i am parent";
+//     }
+// };
+// class child : public parent
+// {
+//     public:
+//     void display()
+//     {
+//         cout<<"i am child";
+//     }
+// };
+// int main()
+// {
+//     child c1;
+//     c1.display();
 // }
