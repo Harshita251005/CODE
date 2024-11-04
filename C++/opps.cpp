@@ -1046,7 +1046,7 @@
 //     return 0;
 // }
 
-//overiding use in inhertance
+// overiding use in inhertance
 
 // #include <iostream>
 // using namespace std;
@@ -1071,3 +1071,70 @@
 //     child c1;
 //     c1.display();
 // }
+
+// #include <iostream>
+// using namespace std;
+// class school
+// {
+// public:
+//     virtual void display()
+//     {
+//         cout<<"hello";
+//     }
+// };
+// class child : public school
+// {
+// public:
+//     void display()
+//     {
+//         cout << "print";
+//     }
+// };
+
+// int main()
+// {
+//     school s1;
+//     school *ptr;
+//     child c1;
+//     ptr=&c1;
+//     ptr->display();
+//     return 0;
+// }
+
+// #include<iostream>
+// using namespace std;
+// class shape{
+//     public:
+//     virtual double area()=0;
+// };
+// class circle: public shape{
+//     public:
+//     double radius;
+//     double Area(){
+//         double result = 2*3.14*radius;
+//     }
+// };
+// class rectangle: public shape{
+//     private:
+//     double length;
+//     double breadth;
+//    public:
+//     rectangle(double l, double b){
+//         length=l;
+//         breadth=b;
+//     }
+//     double area()
+//     {
+//         return length*breadth;
+//     }
+// };
+// int main()
+// {
+//     return 0;
+// }
+
+
+
+
+
+

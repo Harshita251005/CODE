@@ -77,25 +77,25 @@
 
 
 
-// #include<stdio.h>
-// int main()
-// {
-//     int sub1,sub2,sub3;
-//     printf("enter the marks of sub1 = ");
-//     scanf("%d",&sub1);
-//     printf("enter the marks of sub2 = ");
-//     scanf("%d",&sub2);
-//     printf("enter the marks of sub3 = ");
-//     scanf("%d",&sub3);
-//     if(sub1>33 && sub2 >33 && sub3 >33)
-//     {
-//         printf("student is pass");
-//     }
-//     else {
-//         printf("student is fail");
-//     }
+#include<stdio.h>
+int main()
+{
+    int sub1,sub2,sub3;
+    printf("enter the marks of sub1 = ");
+    scanf("%d",&sub1);
+    printf("enter the marks of sub2 = ");
+    scanf("%d",&sub2);
+    printf("enter the marks of sub3 = ");
+    scanf("%d",&sub3);
+    if(sub1>33 && sub2 >33 && sub3 >33)
+    {
+        printf("student is pass");
+    }
+    else {
+        printf("student is fail");
+    }
 
-// }
+}
 
 
 

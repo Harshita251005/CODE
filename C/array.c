@@ -1,21 +1,22 @@
-// // #include<stdio.h>
-// // int main()
-// // {
-// //     int marks[4];
-// //     marks[0]=45;
-// //     marks[1]=89;
-// //     marks[2]=456;
-// //     marks[3]=345;
-// //     printf("display the values\n%d\n%d\n%d\n%d\n",marks[0],marks[1],marks[2],marks[3]);
-// //     return 0;
-// // }
-// // #include<stdio.h>
-// // int main(){
-// //     int arr[5] = {2,4,6,8,10};
-// //     arr[4]=100;
-// //     printf("%d",arr[4]);
-// //     return 0;
-// // }
+#include<stdio.h>
+int main()
+{
+    int marks[4];
+    marks[0]=45;
+    marks[1]=89;
+    marks[2]=456;
+    marks[3]=345;
+    printf("display the values\n%d\n%d\n%d\n%d\n",marks[0],marks[1],marks[2],marks[3]);
+    return 0;
+}
+
+// #include<stdio.h>
+// int main(){
+//     int arr[5] = {2,4,6,8,10};
+//     arr[4]=100;
+//     printf("%d",arr[4]);
+//     return 0;
+// }
 
 // // #include<stdio.h>
 // // int main(){
