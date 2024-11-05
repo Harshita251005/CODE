@@ -8,20 +8,20 @@
 // return 0;
 // }
 
-// #include<iostream>
-// using namespace std;
-// int main()
-// {
-// int a;
-// cin>>a;
-// if(a>10){
-//     cout<<"accept";
-// }
-// else{
-//     cout<<"not accepted";
-// }
-// return 0;
-// }
+#include<iostream>
+using namespace std;
+int main()
+{
+int a;
+cin>>a;
+if(a>10){
+    cout<<"accept";
+}
+else{
+    cout<<"not accepted";
+}
+return 0;
+}
 
 // #include<iostream>
 // using namespace std;
