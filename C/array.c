@@ -1,14 +1,14 @@
-#include<stdio.h>
-int main()
-{
-    int marks[4];
-    marks[0]=45;
-    marks[1]=89;
-    marks[2]=456;
-    marks[3]=345;
-    printf("display the values\n%d\n%d\n%d\n%d\n",marks[0],marks[1],marks[2],marks[3]);
-    return 0;
-}
+// #include<stdio.h>
+// int main()
+// {
+//     int marks[4];
+//     marks[0]=45;
+//     marks[1]=89;
+//     marks[2]=456;
+//     marks[3]=345;
+//     printf("display the values\n%d\n%d\n%d\n%d\n",marks[0],marks[1],marks[2],marks[3]);
+//     return 0;
+// }
 
 // #include<stdio.h>
 // int main(){
@@ -34,21 +34,21 @@ int main()
 // //     return 0;
 // // }
 
-// // #include<stdio.h>
-// // int main(){
-// //     int arr[5];
-// //     printf("enter first element");
-// //     scanf("%d",&arr[0]);
-// //     printf("enter second element");
-// //     scanf("%d",&arr[1]);
-// //     printf("enter third element");
-// //     scanf("%d",&arr[2]);
-// //     printf("enter fourth element");
-// //     scanf("%d",&arr[3]);
-// //     printf("enter fifth element");
-// //     scanf("%d",&arr[4]);
-// //     return 0;
-// // }
+#include<stdio.h>
+int main(){
+    int arr[5];
+    printf("enter first element");
+    scanf("%d",&arr[0]);
+    printf("enter second element");
+    scanf("%d",&arr[1]);
+    printf("enter third element");
+    scanf("%d",&arr[2]);
+    printf("enter fourth element");
+    scanf("%d",&arr[3]);
+    printf("enter fifth element");
+    scanf("%d",&arr[4]);
+    return 0;
+}
 
 // // #include<stdio.h>
 // // int main(){
