@@ -934,12 +934,12 @@
 // int main()
 // {
 // read file
-//     ifstream fin;
+    // ifstream fin;
 //     //open file
-//     // ofstream fout;
-//     fin.open("zoom.txt");  //agar nahi create then pehle create karega phir open
+    // ofstream fout;
+    // fin.open("zoom.txt");  //agar nahi create then pehle create karega phir open
 //     //write kar sakte hae
-//     // fout<<"hello india";
+    // fout<<"hello india";
 // //fr read karo
 // char c;
 // fin>>c;
@@ -948,7 +948,7 @@
 //     cout<<c;
 //     fin>>c;
 // }
-//     fin.close();  //resource release kar payu
+    // fin.close();  //resource release kar payu
 
 // vector<int>arr(5);
 // cout << "enter the input";
@@ -962,6 +962,7 @@
 // };
 // fout.close();
 // }
+
 
 // ambiguous error //multiple inheritence
 
