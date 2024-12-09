@@ -25,7 +25,7 @@
 //     return 0;
 // }
 
-// max element
+//max element
 
 // #include <iostream>
 // using namespace std;
