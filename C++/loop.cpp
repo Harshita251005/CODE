@@ -529,7 +529,7 @@
 //     for(j=1;j<=row;j++){
 //     for(i=1;i<=j;i++)
 //     {
-//         cout<< j << " " ;
+//         cout<< i << " " ;
 //     }
 //     cout<<endl;
 //     }
