@@ -8,20 +8,20 @@
 // return 0;
 // }
 
-#include<iostream>
-using namespace std;
-int main()
-{
-int a;
-cin>>a;
-if(a>10){
-    cout<<"accept";
-}
-else{
-    cout<<"not accepted";
-}
-return 0;
-}
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+// int a;
+// cin>>a;
+// if(a>10){
+//     cout<<"accept";
+// }
+// else{
+//     cout<<"not accepted";
+// }
+// return 0;
+// }
 
 // #include<iostream>
 // using namespace std;
@@ -164,20 +164,46 @@ return 0;
 
 
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-long long range_sum(long long l, long long r) {
-    return (r * (r + 1) - l * (l - 1)) / 2;
-}
+// long long range_sum(long long l, long long r) {
+//     return (r * (r + 1) - l * (l - 1)) / 2;
+// }
 
-int main() {
-    int T;
-    cin >> T;
-    for (int i = 0; i < T; i++) {
-        long long l, r;
-        cin >> l >> r;
-        cout << range_sum(l, r) <<endl;
-    }
-    return 0;
-}
+// int main() {
+//     int T;
+//     cin >> T;
+//     for (int i = 0; i < T; i++) {
+//         long long l, r;
+//         cin >> l >> r;
+//         cout << range_sum(l, r) <<endl;
+//     }
+//     return 0;
+// }
+
+
+// #include<iostream>
+// using namespace std;
+// int main() {
+// 	int n,m;
+// 	cin>>n>>m;
+// 	int arr[n];
+// 	for(int i=0;i<n;i++)
+// 	{
+// 		cin>>arr[i];
+// 	}
+// 	bool flag=false;
+// 	for(int i=0;i<n;i++)
+// 	{
+// 		if (arr[i]==m){
+// 		cout<<i<<endl;
+// 		flag = true;
+// 		break;
+
+// 		}
+// 	}
+// 	if(!flag)
+// 	cout<<-1<<endl;
+// 	return 0;
+// }
